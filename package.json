@@ -1,0 +1,11 @@
+{
+  "name": "student-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Student Assignment Tracker System",
+  "scripts": {
+    "dev:backend": "powershell -Command \"cd backend; .\\venv\\Scripts\\python run.py\"",
+    "dev:frontend": "npm run --prefix frontend dev",
+    "dev": "npx -y concurrently -n backend,frontend -c green,cyan \"npm run dev:backend\" \"npm run dev:frontend\""
+  }
+}
